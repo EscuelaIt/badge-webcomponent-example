@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badge demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      --eit-badge-default-background-color: rgb(255, 72, 0);
+      --eit-badge-success-background-color: rgb(75, 177, 21);
+    }
+  
+    p {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Badge demo</h1>
+
+  <p>
+    <eit-badge value="8">Notificaciones</eit-badge>
+  </p>
+  <p>
+    <eit-badge value="8" status="big">Notificaciones</eit-badge>
+  </p>
+  <p>
+    <eit-badge value="999" status="success-big">Notificaciones</eit-badge>
+  </p>
+  <p>
+    <eit-badge value="Oferta!!" status="neutral">500 €</eit-badge>
+  </p>
+  <p>
+    <eit-badge value="Oferta!!" status="neutral-square">500 €</eit-badge>
+  </p>
+  <p>
+    <eit-badge value="Oferta!!" status="neutral-big-square">500 €</eit-badge>
+  </p>
+
+  <script type="module" src="eit-badge.js"></script>
+</body>
+</html>
